@@ -68,7 +68,7 @@ class DNSMonitor:
             self.save_logs()
             print(f"[+] تم حفظ {len(self.dns_queries)} سجل DNS")
 
-if name == "main":
+if __name__ == "__main__":
     monitor = DNSMonitor()
     
     # تأكد من تغيير eth0 إلى واجهة الشبكة الصحيحة
